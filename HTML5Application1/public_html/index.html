@@ -12,11 +12,26 @@ and open the template in the editor.
     </head>
     <body>
         <div> 123567849</div>
-        <button onclick="myFunction()">Try it</button>
+      
         <script type="text/javascript">
             var list = document.getElementsByTagName("div").toString();
-            f =list.length;
-                    myFunction(){}
+            f =list.split();
+                    myFunction(f){ for (var i = 0, endI = arr.length - 1; i < endI; i++) {
+        var wasSwap = false;
+        for (var j = 0, endJ = endI - i; j < endJ; j++) {
+            if (arr[j] > arr[j + 1]) {
+                var swap = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = swap;
+                wasSwap = true;
+            }
+        }
+        if (!wasSwap) break;
+    }
+    return arr;
+} }
                      </script>
+             <button onclick="myFunction()">Try it</button> 
+      document.getElementsByTagName("div")      
     </body>
 </html>
