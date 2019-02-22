@@ -12,7 +12,23 @@ and open the template in the editor.
       
     </head>
     <body>
-      <div>123567849</div>
-     
+        <div id ="mas">123567849</div>
+        <button onclick="alert(domRangeCreate())">
+        Создать Range и вывести его текст
+       </button>
+
+      <script type="text/javascript">
+        //  var a  = document.getElementsByTagName("div");
+        //  var list =a.length;
+       // for(var i = 0; i<document.body.childNodes.length;i++) {
+       //  alert ( document.body.childNodes[i]);   
+     //   }
+    function domRangeCreate(){
+       var root =document.getElementById("mas");
+      // Найдем контейнеры граничных точек (в данном случае тестовые)
+      var str = root.firstChild.nodeValue;
+      var arr =str.split('');
+      }
+      </script>
     </body>
 </html>
