@@ -13,7 +13,7 @@ and open the template in the editor.
     </head>
     <body>
 <<<<<<< HEAD
-        <div>123567849</div>
+        <div id ="mas">123567849</div>
         <button onclick="myFunction()">Try it</button> 
         <script type="text/javascript">
     
@@ -22,28 +22,21 @@ and open the template in the editor.
       var str = root.firstChild.nodeValue;
       var arr =str.split('');
         
-        myFunction(){for (var i = 0, endI = arr.length - 1; i < endI; i++){
-        var wasSwap = false;
-        for (var j = 0, endJ = endI - i; j < endJ; j++) {
-            if (arr[j] > arr[j + 1]) {
-                var swap = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = swap;
-                wasSwap = true;
+       function myFunction(){
+            for (var i = 0, endI = arr.length - 1; i < endI; i++){
+               var wasSwap = false;
+                for (var j = 0, endJ = endI - i; j < endJ; j++) {
+                if (arr[j] > arr[j + 1]) {
+                  var swap = arr[j];
+                  arr[j] = arr[j + 1];
+                  arr[j + 1] = swap;
+                  wasSwap = true;
             }
         }
         if (!wasSwap) break;
-    }
+            }
     return arr;
-} 
+        };
                      </script>
-=======
-        <div>987654321 </div>
-        <script type ="text/javascript">
-         var str = document.getElementsByTagName("div");
-     
-        
-        </script>
->>>>>>> 728b7ad156d87c56ef7769f1b8a9d785ae2d4157
-    </body>
+          </body>
 </html>
