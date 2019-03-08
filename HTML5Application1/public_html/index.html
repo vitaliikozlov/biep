@@ -20,7 +20,7 @@ and open the template in the editor.
       // Найдем контейнеры граничных точек (в данном случае тестовые)
       var str = root.firstChild.nodeValue;
       var arr =str.split('');
-        
+      var arr2 =[];   
        function myFunction(){
             for (var i = 0, endI = arr.length - 1; i < endI; i++){
                var wasSwap = false;
@@ -35,10 +35,16 @@ and open the template in the editor.
         if (!wasSwap) break;
             }
     return arr;
-        };
-        
-        var b =arr.toString();
+      var len =arr.length;
+        var b="";
+       for (i=0; i<len; i++) {
+          b = b+arr[i];
+       }
         document.getElementById("mas").innerHTML =b;
+    
+        };
+      
+    
                      </script>
           </body>
 </html> 
