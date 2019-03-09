@@ -20,21 +20,24 @@ and open the template in the editor.
       // Найдем контейнеры граничных точек (в данном случае тестовые)
       var str = root.firstChild.nodeValue;
       var arr =str.split('');
-      var arr2 =[];   
+      
        function myFunction(){
-            for (var i = 0, endI = arr.length - 1; i < endI; i++){
-               var wasSwap = false;
-                for (var j = 0, endJ = endI - i; j < endJ; j++) {
+           // for (var i = 0, endI = arr.length-1 ; i < endI; i++){
+            for (var i = 0, endI = arr.length-1 ; i < endI; i++){  
+               var assort = false;
+             
+           //  for (var j = 0, endJ = endI-1 ; j < endJ; j++) {
+              for (var j = 0, endJ = endI-1 ; j < endJ; j++) {
                 if (arr[j] > arr[j + 1]) {
-                  var swap = arr[j];
+                  var min = arr[j];
                   arr[j] = arr[j + 1];
-                  arr[j + 1] = swap;
-                  wasSwap = true;
+                  arr[j + 1] = min;
+                  assort = true;
             }
         }
-        if (!wasSwap) break;
+        if (!assort) break;
             }
-    return arr;
+    
       var len =arr.length;
         var b="";
        for (i=0; i<len; i++) {
