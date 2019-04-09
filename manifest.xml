@@ -1,0 +1,3 @@
+﻿<MSDeploy.iisApp>
+    <iisapp path="HTML5Site" /> 
+</MSDeploy.iisApp>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebPlatform>
+  <Links>
+    <AddLink InDashboard="True" InLearn="True">
+      <Title>New to This Template?</Title>
+      <Description>Learn more about how this template works.</Description>
+      <Uri>http://go.microsoft.com/?linkid=9812588</Uri>
+    </AddLink> 
+  </Links>
+</WebPlatform>
