@@ -12,14 +12,22 @@ and open the template in the editor.
       
     </head>
     <body>
+
         <div id ="mas">1952967210854</div>
+=======
+         <h2>Let AJAX change this text</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+        
+        <div id ="mas">123-56-7849</div>
+
         <button onclick="myFunction()">Try it</button> 
-        <script type="text/javascript">
+    <!-- <script type="text/javascript">
     
        var root =document.getElementById("mas");
       // Найдем контейнеры граничных точек (в данном случае тестовые)
       var str = root.firstChild.nodeValue;
       var arr =str.split('');
+    
       
        function myFunction(){
            // for (var i = 0, endI = arr.length-1 ; i < endI; i++){
@@ -48,6 +56,74 @@ and open the template in the editor.
         };
       
     
-                     </script>
-          </body>
+                     </script>-->
+                     
+                     <H2> My first JS</H2> 
+                     <button type ="button" onclick="document.getElementById('demo').innerHTML =Date()">Click</button>
+                     <p id ="demo2">ля-ля-ля</p>
+             
+                     
+       
+
+          <!--  <script>
+                var x = myFunction(4,3);
+                document.getElementById("demo2").innerHTML = x;
+                function myFunction(a,b) {
+                return a * b;
+                }
+             </script>
+             
+             <script>
+          // Create an object:
+         var car = {type:"Fiat", model:"500", color:"white"};
+
+         // Display some data from the object:
+         document.getElementById("demo2").innerHTML = "The car type is " + car.type;
+           </script>-->
+           
+         <!--    <script type="text/javascript">
+    
+       var root =document.getElementById("mas");
+      // Найдем контейнеры граничных точек (в данном случае тестовые)
+      var str = root.firstChild.nodeValue;
+      var arr =str.split('');
+     
+       function myFunction(){
+          var offnule =0;
+             for(var i=0; i<arr.length; i++){ if (arr[i]==="-"){arr[i] =arr[i]+arr[i+1];  arr.splice(i+1, 1); }};
+      
+             for(var i=0; i<arr.length; i++) { arr[i] = parseInt(arr[i], 10); } 
+           //// for (var i = 0, endI = arr.length-1 ; i < endI; i++){
+              for (i = 0; i < arr.length; i++){  
+                   if ((i+1)%2===0){
+                   offnule = offnule+arr[i];
+               }};           
+          
+        document.getElementById("mas").innerHTML =offnule;
+    
+       };      
+    
+                     </script>-->
+        <!-- <script>
+             document.getElementById("demo2").innerHTML = 
+              "The full URL of this page is:<br>" + window.location.href;
+        </script>-->
+      <!--  <script>
+           function loadDoc() {
+           var xhttp = new XMLHttpRequest();
+           xhttp.onreadystatechange = function() {
+           if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("demo2").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "login.txt", true);
+  xhttp.send();
+} 
+            
+        </script>-->
+
+          
+         <div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+        
+         </body>
 </html> 
